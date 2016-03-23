@@ -1,8 +1,11 @@
-<h5>Leadership Team</h5>
+
+
+<h4> The Best Team : Caktus Squad</h4>
 <ul>
-  <li>Person One</li>
-  <li>Person Two</li>
-  <li>Person Three</li>
+  {{#each model as |leadership|}}
+    <li>{{leadership.name}} AKA {{leadership.nickname}}</li>
+
+  {{/each}}
 </ul>
 
 {{#link-to 'team'}}Back{{/link-to}}
